@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ebb7d2713efc4f34bca8747d7b29aef
+guid: 5ea54e295dc63477f9f57aa840250115
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -35,7 +35,7 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 0
+    optimizeMeshForGPU: 1
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -60,6 +60,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 
