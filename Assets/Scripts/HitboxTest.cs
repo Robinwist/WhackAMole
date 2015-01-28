@@ -3,11 +3,21 @@ using System.Collections;
 
 public class HitboxTest : MonoBehaviour {
 
-	void OnTriggerEnter(Collider other)
+	private Score scoreScript;
+	private GameObject ScoreObject;
+
+	void Start()
 	{
-		if(other.tag == "Hammer")
+		ScoreObject = GameObject.Find("GameManager");
+		scoreScript = ScoreObject.GetComponent<Score>();
+	}
+
+	void OnCollisionEnter(Collision other)
+	{
+		if(other.transform.tag == "Hammer")
 		{
 			Debug.Log("HAMMER TIME!!");
+			scoreScript.UpdateScore(1);
 		}
 	}
 }
