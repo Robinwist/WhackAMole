@@ -35,9 +35,9 @@ public class OVRCrosshair
 	public float   FadeTime			  = 0.3f;
 	public float   FadeScale      	  = 0.6f;
 	public float   CrosshairDistance  = 1.0f;
-
+	
 	public KeyCode CrosshairKey       = KeyCode.C;
-		
+	
 	private float  DeadZoneX          =  400.0f;
 	private float  DeadZoneY          =   75.0f;
 	
@@ -77,7 +77,7 @@ public class OVRCrosshair
 		CameraController = cameraController;
 		UIAnchor = CameraController.centerEyeAnchor;
 	}
-
+	
 	/// <summary>
 	/// Sets the OVR player controller.
 	/// </summary>
@@ -107,7 +107,7 @@ public class OVRCrosshair
 		DisplayCrosshair 		= false;
 		CollisionWithGeometry 	= false;
 		FadeVal 		 		= 0.0f;
-	
+		
 		ScreenWidth  = Screen.width;
 		ScreenHeight = Screen.height;
 		
@@ -151,8 +151,8 @@ public class OVRCrosshair
 			// allowing rotation to take place
 			if(PlayerController != null)
 				PlayerController.SetSkipMouseRotation(true);
-
-			GUI.color = new Color(1, 1, 1, FadeVal * FadeScale);
+			
+			//GUI.color = new Color(1, 1, 1, FadeVal * FadeScale);
 			
 			// Calculate X
 			XL += Input.GetAxis("Mouse X") * ScaleSpeedX;
@@ -188,7 +188,7 @@ public class OVRCrosshair
 			bool skipMouseRotation = true;
 			if(PlayerController != null)
 				PlayerController.GetSkipMouseRotation(ref skipMouseRotation);
-		
+			
 			if(skipMouseRotation == true)
 			{
 				// Left
@@ -198,8 +198,8 @@ public class OVRCrosshair
 											ImageCrosshair.height), 
 											ImageCrosshair);
 			}
-				
-			GUI.color = Color.white;
+			
+			//GUI.color = Color.white;
 		}
 	}
 	#endregion
@@ -224,7 +224,7 @@ public class OVRCrosshair
 			else
 				DisplayCrosshair = false;
 		}
-					
+		
 		return DisplayCrosshair;
 	}
 	
