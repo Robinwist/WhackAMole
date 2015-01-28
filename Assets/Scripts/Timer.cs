@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour {
 			Time.timeScale = 0f;
 			Input.ResetInputAxes();
 
-			//Countdown.text = "TIME'S UP!";
+			StopAllCoroutines();
 			Debug.Log("Time's Up!");
 		}
 	}
