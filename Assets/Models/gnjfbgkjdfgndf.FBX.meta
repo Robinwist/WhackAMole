@@ -1,13 +1,40 @@
 fileFormatVersion: 2
-guid: 0c48b8b85ddd14eed8bccfe66a026348
+guid: 5cdd5ba80f7754284897c608ed6d0107
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
+    100002: hammer
+    100004: ring down
+    100006: ring1
+    100008: ring2
+    100010: ringup
+    100012: steel
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Box001
+    400002: hammer
+    400004: ring down
+    400006: ring1
+    400008: ring2
+    400010: ringup
+    400012: steel
+    2300000: hammer
+    2300002: ring down
+    2300004: ring1
+    2300006: ring2
+    2300008: ringup
+    2300010: steel
+    3300000: hammer
+    3300002: ring down
+    3300004: ring1
+    3300006: ring2
+    3300008: ringup
+    3300010: steel
+    4300000: hammer
+    4300002: steel
+    4300004: ring down
+    4300006: ring1
+    4300008: ring2
+    4300010: ringup
     9500000: //RootNode
   materials:
     importMaterials: 1
